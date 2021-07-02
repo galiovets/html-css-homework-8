@@ -1,0 +1,48 @@
+@import "../utils/extend";
+
+.advantages__list {
+  margin-bottom: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
+}
+
+.advantages__item {
+  width: 100%;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-right: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 120px) / 4);
+  }
+}
+
+.advantages__thumb {
+  @extend %just-ali-center;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 120px;
+  background: var(--add-color);
+  border-radius: 4px;
+}
+
+.advantages__name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+.advantages__text {
+  line-height: 1.71;
+  color: var(--p-color);
+}

@@ -1,0 +1,52 @@
+.button {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 16px;
+  border: solid 0px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero__button {
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  min-width: 200px;
+  padding: 10px 32px;
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--primary-button-hover);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.mail-form__button {
+  @extend .hero__button;
+  position: relative;
+  padding: 10px 29px;
+  text-align: left;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 28px;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-image: url(../images/icons/send.svg);
+  }
+}
+
+.send__button {
+  @extend .hero__button;
+  display: block;
+  margin: 0 auto;
+}
