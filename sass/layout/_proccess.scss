@@ -1,7 +1,7 @@
 @import "../utils/extend";
 
 .proccess {
-  padding: 0;
+  padding-top: 0;
   @media screen and (max-width: 1199px) {
     display: none;
   }
@@ -10,13 +10,13 @@
 .proccess__list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: calc(-1 * var(--li-gap));
+  margin-left: calc(-1 * var(--li-gap));
 }
 
 .proccess__item {
   position: relative;
   flex-basis: calc((100% / 3 - var(--li-gap)));
-  margin-right: var(--li-gap);
+  margin-left: var(--li-gap);
 }
 
 .proccess__text {
