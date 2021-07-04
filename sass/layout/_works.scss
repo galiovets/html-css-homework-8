@@ -1,7 +1,7 @@
 @import "../utils/extend";
 
 .work {
-  margin-top: -30px;
+  margin-bottom: -30px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +12,7 @@
 
 .work__item {
   width: 100%;
-  margin-top: 30px;
+  margin-bottom: 30px;
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 60px) / 2);
     margin-left: 30px;
