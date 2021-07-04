@@ -1213,7 +1213,6 @@ body {
   padding-bottom: 118px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1600px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--new-hero-back);
@@ -1222,6 +1221,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .hero {
+    max-width: 480px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(".//../../images/images/mob-hero.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(".//../../images/images/mob-hero.jpg");
   }
@@ -1236,6 +1236,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
+    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(".//../../images/images/tab-hero.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(".//../../images/images/tab-hero.jpg");
   }
@@ -1252,6 +1253,7 @@ body {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(".//../../images/images/desktop-hero.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(".//../../images/images/desktop-hero.jpg");
   }
@@ -1668,6 +1670,13 @@ body {
 }
 
 .work__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1717,6 +1726,9 @@ body {
 }
 
 .work__card {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
   border-bottom: 1px solid var(--card-border);
   border-left: 1px solid var(--card-border);
