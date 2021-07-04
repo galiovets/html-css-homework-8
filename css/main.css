@@ -1213,8 +1213,10 @@ body {
   padding-bottom: 118px;
   margin-right: auto;
   margin-left: auto;
+  max-width: 1600px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   background-color: var(--new-hero-back);
   color: var(--primary-white-color);
 }
@@ -1236,16 +1238,15 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    max-width: 768px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(".//../../images/images/tab-hero.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(".//../../images/images/tab-hero.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(".//../../images/images/desktop-hero.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(".//../../images/images/desktop-hero.jpg");
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(".//../../images/images/tab-hero2x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(".//../../images/images/tab-hero2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(".//../../images/images/desktop-hero2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(".//../../images/images/desktop-hero2x.jpg");
   }
 }
 
